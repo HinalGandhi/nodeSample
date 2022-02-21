@@ -5,7 +5,7 @@ var mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config({ path: "./.env" });
 const port = process.env.PORT;
-var DB = process.env.DATABASE;
+var DB = "mongodb+srv://Hinal:hinalgandhi@myapp.e2jiu.mongodb.net/To-Do?retryWrites=true&w=majority";
 console.log(">>:",DB);
 require("./db/connection");
 app.use(express.json());
