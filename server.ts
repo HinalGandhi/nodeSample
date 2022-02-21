@@ -1,7 +1,6 @@
 var express = require("express");
 const app = express();
 const cors = require('cors');
-app.use(cors());
 var mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config({ path: "./.env" });
@@ -11,3 +10,4 @@ require("./db/connection");
 app.use(express.json());
 app.use(require("./routes/auth"));
 app.listen(port, () => console.log(`Listening on port ${port}`));
+app.use(cors());
