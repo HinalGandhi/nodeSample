@@ -6,7 +6,7 @@ const dotenv = require("dotenv");
 dotenv.config({ path: "./.env" });
 const port = process.env.PORT;
 const corsOptions = {
-    origin: 'https://pract-3.netlify.app/To-Do',
+    origin: 'https://pract-3.netlify.app',
     credentials: true,
 };
 app.use(cors(corsOptions));
