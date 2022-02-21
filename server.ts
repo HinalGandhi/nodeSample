@@ -5,8 +5,6 @@ var mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config({ path: "./.env" });
 const port = process.env.PORT;
-var DB = "mongodb+srv://Hinal:hinalgandhi@myapp.e2jiu.mongodb.net/To-Do?retryWrites=true&w=majority";
-console.log(">>:",DB);
 require("./db/connection");
 app.use(express.json());
 app.use(require("./routes/auth"));
