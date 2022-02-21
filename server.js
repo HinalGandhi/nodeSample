@@ -7,4 +7,4 @@ var port = process.env.PORT;
 require("./db/connection");
 app.use(express.json());
 app.use(require("./routes/auth"));
-app.listen(port, function () { return console.log("Listening on port ".concat(port)); });
+app.listen(port, function () { return console.log("Listening on port ".concat(port)); })
