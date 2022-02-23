@@ -5,9 +5,8 @@ var mongoose = require("mongoose");
 var dotenv = require("dotenv");
 dotenv.config({ path: "./.env" });
 var port = process.env.PORT;
-var url = 'https://pract-3.netlify.app' || 'https://dreamy-aryabhata-c5efd5.netlify.app' || "http://localhost:3000";
 var corsOptions = {
-    origin: url,
+    origin: false,
     credentials: true
 };
 app.use(cors(corsOptions));
