@@ -5,11 +5,7 @@ var mongoose = require("mongoose");
 const dotenv = require("dotenv");
 dotenv.config({ path: "./.env" });
 const port = process.env.PORT;
-const corsOptions = {
-    origin: ['https://dreamy-aryabhata-c5efd5.netlify.app','http://localhost:3000','https://pract-3.netlify.app'],
-    credentials: true,
-};
-app.use(cors(corsOptions));
+app.use(cors());
 require("./db/connection");
 app.use(express.json());
 app.use(require("./routes/auth"));
